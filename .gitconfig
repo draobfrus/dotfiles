@@ -1,0 +1,15 @@
+[user]
+	; name = 
+	; email = 
+[alias]
+	ci = commit
+	st = status
+	br = branch
+	co = checkout
+[pull]
+	rebase = true
+[core]
+	editor = nvim
+	; excludesfile =
+[commit]
+	template = 
