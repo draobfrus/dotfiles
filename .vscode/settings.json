@@ -1,0 +1,107 @@
+{
+  "editor.fontSize": 13,
+  "editor.rulers": [
+    80,
+    100
+  ],
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.formatOnPaste": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.scrollback": 10000,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.guides.bracketPairs": true,
+  "vscode-neovim.highlightGroups.highlights": {
+    "Directory": "vim",
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground",
+      "borderColor": "theme.editor.findMatchHighlightBorder"
+    },
+    "Visual": {
+      "backgroundColor": "theme.editor.selectionBackground"
+    },
+    "Conceal": "vim",
+    "Substitute": "vim"
+  },
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/draobfrus/.config/nvim/init.vim",
+  "terminal.external.osxExec": "iTerm.app",
+  "files.hotExit": "off",
+  "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoIndent": "full",
+  // "editor.wordWrap": "on",
+  "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "workbench.tree.indent": 12,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "git.path": "/usr/bin",
+  "terminal.integrated.tabs.enableAnimation": false,
+  "editor.bracketPairColorization.enabled": false,
+  "markdown.preview.typographer": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.enablePreviewFromCodeNavigation": false,
+  "editor.rename.enablePreview": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#666666cc"
+  },
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.showTabs": "single",
+  "update.showReleaseNotes": false,
+  "workbench.settings.editor": "ui",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.indentSize": "tabSize",
+  "blade.format.enable": true,
+  "html.format.extraLiners": "",
+  "html.format.preserveNewLines": false,
+  "html.format.indentInnerHtml": true,
+  "markdown.editor.drop.enabled": false,
+  "markdown.experimental.editor.pasteLinks.enabled": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedVariables": false,
+  "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+
+  // setting for ruby
+  // "[ruby]": {
+  //   "editor.tabSize": 2,
+  //   "editor.insertSpaces": true
+  // },
+
+  // setting for PHP
+  // "[php]": {
+  //   "editor.tabSize": 4,
+  //   "editor.insertSpaces": true
+  // },
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "codesandbox.currentWorkspace": "92edd138-f6d2-44fe-9ed6-53344fad9cd2",
+  "remote.SSH.remotePlatform": {
+    "sandbox.cvwr79.csb": "linux",
+    "sandbox.75j6rq.csb": "linux"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "workbench.colorTheme": "Base16 Tomorrow Dark",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
