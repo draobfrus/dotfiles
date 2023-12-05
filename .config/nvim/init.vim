@@ -1,43 +1,43 @@
+" プラグイン設定
+" :PlugInstallで適用される
+call plug#begin()
+
+"  カラースキームの適用
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
+" Rails向けのコマンドを提供する
+" Plug 'tpope/vim-rails'
+
+" Ruby向けにendを自動挿入してくれる
+" Plug 'tpope/vim-endwise'
+
+" コメントON/OFFを手軽に実行
+" Plug 'tomtom/tcomment_vim'
+
+" シングルクオートとダブルクオートの入れ替え等
+Plug 'tpope/vim-surround'
+
+" インデントに色を付けて見やすくする
+Plug 'nathanaelkane/vim-indent-guides'
+
+" ログファイルを色づけしてくれる
+Plug 'vim-scripts/AnsiEsc.vim'
+
+" 行末の半角スペースを可視化
+Plug 'bronson/vim-trailing-whitespace'
+
+" ツリー作成
+Plug 'preservim/nerdtree'
+
+" ヤンク箇所を光らせる
+Plug 'machakann/vim-highlightedyank'
+
+call plug#end()
+
 if !exists('g:vscode')
 " VSCodeでは反映しない設定の記述はここに書く
 
-	" プラグイン設定
-	" :PlugInstallで適用される
-	call plug#begin()
-
-	"  カラースキームの適用
-  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-
-	" Rails向けのコマンドを提供する
-	Plug 'tpope/vim-rails'
-
-	" Ruby向けにendを自動挿入してくれる
-	Plug 'tpope/vim-endwise'
-
-	" コメントON/OFFを手軽に実行
-	Plug 'tomtom/tcomment_vim'
-
-	" シングルクオートとダブルクオートの入れ替え等
-	Plug 'tpope/vim-surround'
-
-	" インデントに色を付けて見やすくする
-	Plug 'nathanaelkane/vim-indent-guides'
-
-	" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
-	let g:indent_guides_enable_on_vim_startup = 1
-
-	" ログファイルを色づけしてくれる
-	Plug 'vim-scripts/AnsiEsc.vim'
-
-	" 行末の半角スペースを可視化
-	Plug 'bronson/vim-trailing-whitespace'
-
-	" ツリー作成
-	Plug 'preservim/nerdtree'
-
-	call plug#end()
-
-  "----------------------------------------
+    "----------------------------------------
 	" 操作
 	"----------------------------------------
 	" 常にzshを開く
@@ -53,7 +53,7 @@ if !exists('g:vscode')
 	" wildmenuオプションを有効(vimバーからファイルを選択できる)
 	set wildmenu
 
-  "----------------------------------------
+    "----------------------------------------
 	" 検索
 	"----------------------------------------
 	" 検索するときに大文字小文字を区別しない
@@ -73,9 +73,9 @@ if !exists('g:vscode')
 	" 構文毎に文字色を変化させる
 	syntax on
 	" カラースキーマの指定
-  " tokyonight-night
-  colorscheme tokyonight-night
-  let g:lightline = {'colorscheme': 'tokyonight'}
+    " tokyonight-night
+    colorscheme tokyonight-night
+    let g:lightline = {'colorscheme': 'tokyonight'}
 
 	" 行番号の色
 	highlight LineNr ctermfg=darkyellow
@@ -89,9 +89,12 @@ if !exists('g:vscode')
 			autocmd!
 			autocmd ColorScheme * call ZenkakuSpace()
 			autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
-	  augroup END
-			call ZenkakuSpace()
+        augroup END
+		call ZenkakuSpace()
 	endif
+
+    " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+    let g:indent_guides_enable_on_vim_startup = 1
 
 	" HTML/XML閉じタグ自動補完
 	augroup MyXML
@@ -145,16 +148,10 @@ if !exists('g:vscode')
 	autocmd StdinReadPre * let s:std_in=1
 	autocmd VimEnter * if argc() == 0 && !exists	('s:std_in') | NERDTree | endif
 
+
+    " Highlight the yanked text for 1 second (default is 1)
+    let g:highlightedyank_highlight_duration = 300
 end
-
-call plug#begin()
-" ヤンクする箇所をハイライト
-Plug 'machakann/vim-highlightedyank'
-
-call plug#end()
-
-" Highlight the yanked text for 1 second (default is 1)
-let g:highlightedyank_highlight_duration = 300
 
 "----------------------------------------
 " 表示設定
